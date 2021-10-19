@@ -14,4 +14,6 @@ app.get('/', (req, res) => {
 // api routes
 app.use('/jokes', jokesRoutes);
 
-app.listen(PORT, console.log(`App running at http://localhost:${PORT}`));
+app.listen(PORT, () => {
+  console.log(`App running at http://localhost:${PORT}`);
+});

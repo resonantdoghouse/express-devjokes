@@ -44,6 +44,7 @@ router.post('/', checkAuth, (req, res) => {
       id: uuidv4(),
       question: req.body.question,
       answer: req.body.answer,
+      posted: Date.now(),
     };
     jokes.push(joke);
     fs.writeFileSync('./data/jokes.json', JSON.stringify(jokes), 'utf8');
