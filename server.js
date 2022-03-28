@@ -8,7 +8,22 @@ app.use(express.json());
 app.use(cors());
 
 app.get('/', (req, res) => {
-  res.json({ message: 'Welcome to my API' });
+  console.log(req.originalUrl);
+  res.json({
+    message: 'Welcome to my API',
+    routes: [
+      {
+        route: '/jokes',
+        description: 'get a collection of jokes',
+        method: 'get',
+      },
+      {
+        route: '/jokes/:id',
+        description: "get a single joke by it's id",
+        method: 'get',
+      },
+    ],
+  });
 });
 
 // api routes
