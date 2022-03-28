@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const jokesRoutes = require('./routes/jokes');
+const jokeRoutes = require('./routes/jokes');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 });
 
 // api routes
-app.use('/jokes', jokesRoutes);
+app.use('/jokes', jokeRoutes);
 
 app.listen(PORT, () => {
   console.log(`App running at http://localhost:${PORT}`);
