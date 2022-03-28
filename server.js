@@ -4,7 +4,6 @@ const jokeRoutes = require('./routes/jokes');
 const app = express();
 const PORT = process.env.PORT || 5050;
 
-// test
 app.use(express.json());
 app.use(cors());
 
