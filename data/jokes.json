@@ -36,7 +36,7 @@
     "posted": 1577906551
   },
   {
-    "id": "e8511ba8-70d7-425f-a28a-6c53e77438ea",
+    "id": "e8217583-a966-4cf5-b1b0-67b36bfad5b0",
     "question": "What do you do with a JavaScript function losing its scope?",
     "answer": "You give it closure",
     "posted": 1578856951
