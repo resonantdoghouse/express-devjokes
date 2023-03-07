@@ -13,7 +13,7 @@ You can pass this using a query string, for example `?api_key=neocat`
 ### Post
 
 - /jokes
-    body should inlcude, `question` and `answer`
+    body should include, `question` and `answer`
 
 ### Put
 
