@@ -100,5 +100,23 @@
     "question": "Where did the API go to eat?",
     "answer": "To the RESTaurant",
     "posted": 1605813751
+  },
+  {
+    "id": "6ea5ba04-a846-4aa1-875e-c79b1c1dbb5b",
+    "question": "Whats the object-oriented way to become wealthy?",
+    "answer": "Inheritance",
+    "posted": 1678217897090
+  },
+  {
+    "id": "8a40afe5-ca6a-4ac2-b5e6-406e9bb9b954",
+    "question": "What did the spider do on the computer?",
+    "answer": "Made a website!",
+    "posted": 1678217988399
+  },
+  {
+    "id": "ec3a3dfc-8645-4623-aeb7-f7130e51bbf9",
+    "question": "What did the proud React component say to its child?",
+    "answer": "I've got to give you props",
+    "posted": 1678218020914
   }
 ]
