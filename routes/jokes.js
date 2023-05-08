@@ -36,8 +36,8 @@ router.get('/:id', (req, res) => {
 
 // create joke
 router.post('/', checkAuth, (req, res) => {
-  if (!req.body.question && !req.body.answer) {
-    res.json(400).json({ message: 'bad request, no question or answer' });
+  if (!req.body.question || !req.body.answer) {
+    res.json(400).json({ message: 'bad request, please provide a question and answer' });
   } else {
     const jokes = loadJokesData();
     const joke = {
