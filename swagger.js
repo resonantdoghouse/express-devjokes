@@ -16,6 +16,7 @@ const doc = {
     title: 'DevJokes API',
     description: 'A practice REST API with cringe-worthy jokes',
   },
+  basePath: '/jokes',
   schemes,
   host,
 };
