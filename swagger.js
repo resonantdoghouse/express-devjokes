@@ -1,7 +1,8 @@
 require('dotenv').config()
 const swaggerAutogen = require('swagger-autogen')();
 
-console.log('PORT', process.env.PORT)
+console.log('PORT', process.env.NODE_ENV);
+
 
 const doc = {
   info: {
