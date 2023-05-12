@@ -10,12 +10,12 @@ function loadJokesData() {
 }
 
 // get all jokes
-router.get('/', (req, res) => {
+router.get('/', (_req, res) => {
   res.json(loadJokesData());
 });
 
 // get random joke
-router.get('/random', (req, res) => {
+router.get('/random', (_req, res) => {
   const jokes = loadJokesData();
   const joke = jokes[Math.floor(Math.random() * jokes.length)];
   res.json(joke);
@@ -94,5 +94,8 @@ router.delete('/:id', checkAuth, (req, res) => {
     }
   }
 });
+
+
+
 
 module.exports = router;
