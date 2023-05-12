@@ -1,7 +1,7 @@
 require('dotenv').config()
 const swaggerAutogen = require('swagger-autogen')();
 
-let host = process.env.NODE_ENV === 'development' ? `localhost:${process.env.PORT}` : `https://developerjokes.herokuapp.com`;
+let host = process.env.NODE_ENV === 'development' ? `localhost:${process.env.PORT}` : `developerjokes.herokuapp.com`;
 
 const doc = {
   info: {
