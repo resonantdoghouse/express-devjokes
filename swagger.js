@@ -5,10 +5,10 @@ let host, schemes;
 
 if (process.env.NODE_ENV === 'development') {
   host = `localhost:${process.env.PORT}`;
-  schemes: ['http'];
+  schemes = ['http'];
 } else {
   ('developerjokes.herokuapp.com');
-  schemes: ['https'];
+  schemes = ['https'];
 }
 
 const doc = {
