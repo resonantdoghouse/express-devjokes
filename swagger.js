@@ -5,7 +5,7 @@ const doc = {
     title: 'DevJokes API',
     description: 'A practice REST API with cringe-worthy jokes',
   },
-  host: 'localhost:5051',
+  host: `localhost:${process.env.PORT}`,
 };
 
 const outputFile = './swagger_output.json';

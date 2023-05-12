@@ -2,10 +2,10 @@
   "swagger": "2.0",
   "info": {
     "title": "DevJokes API",
-    "description": "A practice REST API with cringe worthy jokes",
+    "description": "A practice REST API with cringe-worthy jokes",
     "version": "1.0.0"
   },
-  "host": "localhost:5051",
+  "host": "localhost:undefined",
   "basePath": "/",
   "schemes": [
     "http"
