@@ -1,4 +1,4 @@
-// require('dotenv').config()
+require('dotenv').config()
 const swaggerAutogen = require('swagger-autogen')();
 
 console.log('PORT', process.env.PORT)

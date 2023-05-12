@@ -5,7 +5,7 @@
     "description": "A practice REST API with cringe-worthy jokes",
     "version": "1.0.0"
   },
-  "host": "localhost:undefined",
+  "host": "localhost:5051",
   "basePath": "/",
   "schemes": [
     "http"
