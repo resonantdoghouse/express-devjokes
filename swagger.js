@@ -1,15 +1,14 @@
 require('dotenv').config()
 const swaggerAutogen = require('swagger-autogen')();
 
-console.log('PORT', process.env.NODE_ENV);
-
+let host = process.env.NODE_ENV === 'development' ? `localhost:${process.env.PORT}` : `https://developerjokes.herokuapp.com/`;
 
 const doc = {
   info: {
     title: 'DevJokes API',
     description: 'A practice REST API with cringe-worthy jokes',
   },
-  host: `localhost:${process.env.PORT}`,
+  host: host,
 };
 
 const outputFile = './swagger_output.json';
