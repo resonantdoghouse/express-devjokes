@@ -4,10 +4,8 @@ const swaggerUi = require('swagger-ui-express');
 const swaggerFile = require('./swagger_output.json');
 const jokeRoutes = require('./routes/jokes');
 const app = express();
-// require('dotenv').config()
+require('dotenv').config()
 const PORT = process.env.PORT;
-
-console.log(process.env.PORT);
 
 app.use(express.json());
 app.use(cors());

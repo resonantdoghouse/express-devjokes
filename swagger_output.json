@@ -7,6 +7,9 @@
   },
   "host": "localhost:5051",
   "basePath": "/",
+  "schemes": [
+    "http"
+  ],
   "paths": {
     "/jokes/": {
       "get": {
