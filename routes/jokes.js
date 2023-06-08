@@ -11,6 +11,7 @@ function loadJokesData() {
 
 // get all jokes
 router.get('/', (_req, res) => {
+  // #swagger.description = 'Get all jokes'
   res.json(loadJokesData());
 });
 
