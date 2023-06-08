@@ -13,7 +13,7 @@
   "paths": {
     "/jokes/": {
       "get": {
-        "description": "",
+        "description": "Get all jokes",
         "parameters": [],
         "responses": {
           "200": {

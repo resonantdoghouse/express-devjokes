@@ -9,21 +9,20 @@ function loadJokesData() {
   return JSON.parse(fs.readFileSync('./data/jokes.json', 'utf8'));
 }
 
-// get all jokes
 router.get('/', (_req, res) => {
   // #swagger.description = 'Get all jokes'
   res.json(loadJokesData());
 });
 
-// get random joke
 router.get('/random', (_req, res) => {
+  // #swagger.description = 'Get a random joke from the jokes collection'
   const jokes = loadJokesData();
   const joke = jokes[Math.floor(Math.random() * jokes.length)];
   res.json(joke);
 });
 
-// get single joke by id
 router.get('/:id', (req, res) => {
+  // #swagger.description = 'Get a single joke by it\'s id'
   const jokes = loadJokesData();
   const filteredJokes = jokes.filter((joke) => joke.id === req.params.id);
   if (filteredJokes.length === 0) {
@@ -35,8 +34,8 @@ router.get('/:id', (req, res) => {
   }
 });
 
-// create joke
 router.post('/', checkAuth, (req, res) => {
+  // #swagger.description = 'Post a new joke to the jokes collection'
   if (!req.body.question || !req.body.answer) {
     res.status(400).json({ message: 'bad request, please provide a question and answer' });
   } else {
