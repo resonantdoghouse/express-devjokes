@@ -10,6 +10,8 @@ const PORT = process.env.PORT;
 app.use(express.json());
 app.use(cors());
 
+console.log(process.env);
+
 // api routes
 app.use('/jokes', jokeRoutes);
 app.use('/', swaggerUi.serve, swaggerUi.setup(swaggerFile));
